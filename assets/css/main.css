@@ -3085,7 +3085,7 @@ body:after {
   background-image: url(../../images/bg2.jpeg);
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   position: fixed;
   display: block;
@@ -3216,6 +3216,43 @@ body:after {
   padding: 4rem 2rem;
 }
 
+/* heart */
+
+body {
+  position: relative !important;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: url(https://divi.space/wp-content/uploads/2019/02/hearts.png);
+  animation: falling-hearts 18s linear infinite;
+}
+
+@keyframes falling-hearts {
+  0% {
+    background-position: 0% 30%;
+  }
+}
+
+@-moz-keyframes falling-hearts {
+  0% {
+    background-position: 0% 30%;
+  }
+}
+
+@-webkit-keyframes falling-hearts {
+  0% {
+    background-position: 0% 30%;
+  }
+}
+
 @media screen and (max-width: 980px) {
   .wrapper > header.special {
     padding: 3rem 2rem;
@@ -3312,42 +3349,5 @@ body:after {
 @media screen and (max-width: 736px) {
   #footer {
     padding: 1rem 0 0.1rem 0;
-  }
-}
-
-/* heart */
-
-body {
-  position: relative !important;
-}
-
-body:before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  background-image: url(https://divi.space/wp-content/uploads/2019/02/hearts.png);
-  animation: falling-hearts 18s linear infinite;
-}
-
-@keyframes falling-hearts {
-  0% {
-    background-position: 0% 30%;
-  }
-}
-
-@-moz-keyframes falling-hearts {
-  0% {
-    background-position: 0% 30%;
-  }
-}
-
-@-webkit-keyframes falling-hearts {
-  0% {
-    background-position: 0% 30%;
   }
 }
